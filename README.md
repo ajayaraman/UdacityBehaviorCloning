@@ -1,4 +1,4 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 ---
 
 **Udacity Self Driving Car Behavioral Cloning Project**
@@ -11,10 +11,10 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Files Submitted & Code Quality
+### Files Submitted & Code Quality
 
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
@@ -35,13 +35,13 @@ python drive.py model.h5
 
 The model.ipynb file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
 #### 1. An appropriate model architecture has been employed
 
 The model architecture I chose to use was the same one that [NVIDIA's article](https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/) employs. The basic idea is to use convolutional layers at the beginning to extract image features and then use a series of Fully Connected layers at the end to regress on the steering wheel. 
 
-See ![model architecture](images/netarch.png). 
+![model architecture](images/netarch.png). 
 
 This model architecture was not my first choice. I had tried other architectures like using InceptionV3 and also a simple model with fewer conv and fully connected layers. However, the model adapted from the architecture in NVIDIA's blog was the one that was ultimately most effective in reaching a working solution. 
 
@@ -61,7 +61,7 @@ Training data was chosen to keep the vehicle driving on the road. I used a combi
 
 For details about how I created the training data, see the next section. 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
 #### 1. Solution Design Approach
 
@@ -82,7 +82,7 @@ The final step was to run the simulator to see how well the car was driving arou
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road in a relatively smooth fashion.
 
-####2. Creation of the Training Set & Training Process
+#### 2. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
